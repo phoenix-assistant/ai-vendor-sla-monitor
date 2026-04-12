@@ -1,0 +1,38 @@
+{
+  "name": "@phoenix-assistant/ai-vendor-sla-monitor",
+  "version": "0.1.0",
+  "description": "Automated regression testing against model API quality baselines",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "ai-vendor-sla-monitor": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test tests/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "sla",
+    "monitoring",
+    "regression",
+    "testing"
+  ],
+  "author": "Phoenix Assistant",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phoenix-assistant/ai-vendor-sla-monitor.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^22.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
